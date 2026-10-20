@@ -1,0 +1,14 @@
+opening = int(input("Opening stock: "))
+incoming = int(input("Incoming stock: "))
+dispatched = int(input("Dispatched stock: "))
+closing = int(input("Recorded closing stock: "))
+
+expected = opening + incoming - dispatched
+
+print("Expected Stock =", expected)
+
+if expected == closing:
+    print("Stock matches")
+else:
+    print("Stock discrepancy found")
+    print("Difference =", abs(expected - closing))
