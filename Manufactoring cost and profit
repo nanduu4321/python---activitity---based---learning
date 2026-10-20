@@ -1,0 +1,15 @@
+m = float(input("Material cost: "))
+l = float(input("Labour cost: "))
+w = float(input("Wastage cost: "))
+s = float(input("Selling price: "))
+
+cost = m + l + w
+profit = s - cost
+
+print("Total Cost =", cost)
+print("Profit =", profit)
+
+if profit > 0:
+    print("Profit achieved")
+else:
+    print("Loss")
