@@ -1,0 +1,18 @@
+c = int(input("Consultation charge: "))
+d = int(input("Diagnostic charge: "))
+t = int(input("Treatment charge: "))
+
+total = c + d + t
+discount = total * 10 / 100
+bill = total - discount
+
+print("Total Bill =", total)
+print("Discount =", discount)
+print("Final Bill =", bill)
+
+if bill <= 1000:
+    print("Basic Patient")
+elif bill <= 5000:
+    print("Standard Patient")
+else:
+    print("Advanced Patient")
