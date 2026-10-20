@@ -1,0 +1,18 @@
+capacity = int(input("Tank capacity: "))
+water = int(input("Starting water: "))
+days = int(input("Number of days: "))
+
+for i in range(days):
+    inflow = int(input("Water inflow: "))
+    outflow = int(input("Water outflow: "))
+
+    water = water + inflow - outflow
+
+    if water > capacity:
+        water = capacity
+    elif water < 0:
+        water = 0
+
+    print("Day", i + 1, "Water =", water)
+
+print("Final Water Level =", water)
