@@ -1,0 +1,11 @@
+usage = int(input("Enter data usage in GB: "))
+budget = int(input("Enter budget: "))
+
+if usage <= 2 and budget >= 199:
+    print("Choose Basic Plan - Rs.199")
+elif usage <= 5 and budget >= 299:
+    print("Choose Smart Plan - Rs.299")
+elif usage <= 10 and budget >= 399:
+    print("Choose Super Plan - Rs.399")
+else:
+    print("No suitable plan")
